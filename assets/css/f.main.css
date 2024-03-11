@@ -1,0 +1,130 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #0b34bd, #87ceeb);
+}
+
+header {
+  position: relative;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container {
+  margin: 20px;
+}
+
+.custom-form {
+  max-width: 600px;
+  margin: auto;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+li {
+  list-style: none;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.radio-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.radio-group input {
+  margin-right: 5px;
+}
+
+.checkbox-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.checkbox-group input {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background: linear-gradient(135deg, #0b34bd, #87ceeb);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-content {
+  text-align: left;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.overlay-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.overlay-content ul li {
+  margin-bottom: 5px;
+}
