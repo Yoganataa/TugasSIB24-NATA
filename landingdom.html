@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SUMA</title>
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/ldom.main.css" />
   </head>
   <body>
     <header>
-      <div class="carousel">
+        <!-- carousel -->
+      <div class="carousel" id="carousel">
         <div
           class="carousel-item active"
           style="
@@ -28,10 +29,35 @@
           "
         ></div>
       </div>
+
+
+
+      
     </header>
 
     <section class="content">
-      <h1>Selamat Datang di SUMA</h1>
+        <!-- navbar -->
+      <div class="nav-wrapper">
+        <div class="logo-container">
+            <img class="logo" src="./assets/images/suma.png" alt="Logo">
+        </div>
+        <nav>
+            <input class="hidden" type="checkbox" id="menuToggle">
+            <label class="menu-btn" for="menuToggle">
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </label>
+            <div class="nav-container">
+                <ul class="nav-tabs">
+                    <li class="nav-tab" onclick="scrollToCarousel()" >Beranda</li>
+                    <li class="nav-tab" onclick="scrollToFitur()">Fitur</li>
+                    <li class="nav-tab" onclick="scrollToFAQ()">FAQ</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+      <h1 class="welcome">Selamat Datang di SUMA</h1>
       <h3>
         SUMA adalah sebuah website survei mahasiswa yang berisi tentang berbabgai macam topik menarik terkait mahasiswa jaman now. Jangan lupa mengisi survey kami,dengan kalian mengisi survey dari kami,
         kalian telah membantu kemajuan dari website ini dan membantu para
@@ -40,13 +66,13 @@
 
       <button class="custom-button" onclick="window.location.href='form.html'">Isi Survei</button> &nbsp
       <button class="custom-button" onclick="window.location.href='jsdasar.html'">Umpan Balik</button> &nbsp
-      <button class="custom-button" onclick="window.location.href='landingdom.html'">Landing DOM</button><br><br><br><br><br><br>
+      <button class="custom-button" onclick="window.location.href='index.html'">Kembali</button><br><br><br><br><br><br>
 
 
-      <main>
+      <main id="fitur">
         <center><h1>Fitur Unggulan</h1></center>
 
-        <section class="features">
+        <section class="features" >
           <div class="feature-card">
             
             <img
@@ -78,7 +104,7 @@
         </section>
 
           <main class="card">
-            <h2 class="title">FAQ</h2>
+            <h2 class="title" id="faq">FAQ</h2>
             <div class="acc-container">
               <button class="acc-btn">Bagaimana cara mengisi survey?</button>
               <div class="acc-content">
@@ -107,5 +133,5 @@
       <p>&copy; 2024 SUMA. Designed by Nata</p>
     </footer>
   </body>
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/jsdom.js"></script>
 </html>
