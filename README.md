@@ -1,7 +1,8 @@
 ## WEB INI TANPPA MENGGUANAKAN FRAMEWORK
-# Tugas P6 Arkatama
+## Add JS DOM for Carousel Effect
+# Tugas P6 & P7 Arkatama
 
-Repositori untuk memenuhi tugas petermuan 6 Arkatama
+Repositori untuk memenuhi tugas petermuan 6 dan 7 Arkatama
 
 ## Authors
 
@@ -14,10 +15,13 @@ Repositori untuk memenuhi tugas petermuan 6 Arkatama
 ## Screenshots
 
 # Landing Page (Index.html)
-![App Screenshot](assets/images/ghlpage.png)
+![landingpage](assets/images/ghlpage.png)
+
+# Landing Page Js DOM (landingdom.html)
+!["JS DOM"](assets/images/ghldompage.png)
 
 # Form Page (form.html)
-![App Screenshot](assets/images/ghfpage.png)
+![Form](assets/images/ghfpage.png)
 
 # JSDasar Page (jsdasar.html)
-![App Screenshot](assets/images/ghumpage.png)
+![JSD](assets/images/ghumpage.png)
