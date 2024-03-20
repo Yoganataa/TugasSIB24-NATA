@@ -1,9 +1,16 @@
-## WEB INI TANPPA MENGGUANAKAN FRAMEWORK
-## Add JS DOM for Carousel Effect
-# Tugas P6, P7 & P8 Arkatama
+## WEB INI TANPA MENGGUANAKAN CSS ATAU JS FRAMEWORK
+## Add JS DOM for Carousel Effect & Responsive
+# Tugas P6, P7, P8 & P9 Arkatama
 
-Repositori untuk memenuhi tugas petermuan 6, 7 & 8 Arkatama
+Repositori untuk memenuhi tugas petermuan 6, 7, 8 & 9 Arkatama
 # Changelog:
+
+Pertemuan 9 
+
+```bash
+  - Login
+  - Responsive
+```
 
 Pertemuan 8 
 
@@ -48,6 +55,12 @@ Pertemuan 6
 
 # Tampilan Produk (productapi.html)
 ![Lihat Produk](assets/images/ghpapage.png)
+
+# Tampilan Produk Responsif (product-responsive.html)
+![Lihat Produk](assets/images/produkresp.png)
+
+# Login Responsif (login-responsive.html)
+![Login](assets/images/loginresp.png)
 
 # Form Page (form.html)
 ![Form](assets/images/ghfpage.png)
