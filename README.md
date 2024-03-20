@@ -1,8 +1,31 @@
 ## WEB INI TANPPA MENGGUANAKAN FRAMEWORK
 ## Add JS DOM for Carousel Effect
-# Tugas P6 & P7 Arkatama
+# Tugas P6, P7 & P8 Arkatama
 
-Repositori untuk memenuhi tugas petermuan 6 dan 7 Arkatama
+Repositori untuk memenuhi tugas petermuan 6, 7 & 8 Arkatama
+# Changelog:
+
+Pertemuan 8 
+
+```bash
+  - WEB API
+  - CRUD
+```
+
+Pertemuan 7
+
+```bash
+  - Landingpage 
+  - Js DOM
+```
+Pertemuan 6
+
+```bash
+  - Carousel
+  - Landingpage
+  - Form
+  - Js Basic
+```
 
 ## Authors
 
@@ -19,6 +42,12 @@ Repositori untuk memenuhi tugas petermuan 6 dan 7 Arkatama
 
 # Landing Page Js DOM (landingdom.html)
 !["JS DOM"](assets/images/ghldompage.png)
+
+# Tambahkan Produk (productarray.html)
+![Tambah Produk](assets/images/ghprpage.png)
+
+# Tampilan Produk (productapi.html)
+![Lihat Produk](assets/images/ghpapage.png)
 
 # Form Page (form.html)
 ![Form](assets/images/ghfpage.png)
