@@ -1,18 +1,29 @@
 ## WEB INI TANPA MENGGUANAKAN CSS ATAU JS FRAMEWORK
-## Add JS DOM for Carousel Effect & Responsive
-# Tugas P6, P7, P8 & P9 Arkatama
+## Framework dipakai pada Pertemuan 10
 
-Repositori untuk memenuhi tugas petermuan 6, 7, 8 & 9 Arkatama
+## Add JS DOM for Carousel Effect & Responsive
+
+# Tugas P6, P7, P8, P9 & P10 Arkatama
+
+Repositori untuk memenuhi tugas petermuan 6, 7, 8, 9, & 10 Arkatama
+
 # Changelog:
 
-Pertemuan 9 
+Pertemuan 10
+
+```bash
+  - AdminLTE
+  - Boostrap
+```
+
+Pertemuan 9
 
 ```bash
   - Login
   - Responsive
 ```
 
-Pertemuan 8 
+Pertemuan 8
 
 ```bash
   - WEB API
@@ -22,9 +33,10 @@ Pertemuan 8
 Pertemuan 7
 
 ```bash
-  - Landingpage 
+  - Landingpage
   - Js DOM
 ```
+
 Pertemuan 6
 
 ```bash
@@ -38,32 +50,39 @@ Pertemuan 6
 
 - Nama: Mohammad Arbi Yoganata
 - Universitas: Universitas Islam Balitar
-- Program Studi: Teknik Informatika 
+- Program Studi: Teknik Informatika
 - Kelas: FSWD 3
-
 
 ## Screenshots
 
 # Landing Page (Index.html)
-![landingpage](assets/images/ghlpage.png)
+
+![landingpage](dist/img/suma/ghlpage.png)
 
 # Landing Page Js DOM (landingdom.html)
-!["JS DOM"](assets/images/ghldompage.png)
+
+!["JS DOM"](dist/img/suma/ghldompage.png)
 
 # Tambahkan Produk (productarray.html)
-![Tambah Produk](assets/images/ghprpage.png)
+
+![Tambah Produk](dist/img/suma/ghprpage.png)
 
 # Tampilan Produk (productapi.html)
-![Lihat Produk](assets/images/ghpapage.png)
+
+![Lihat Produk](dist/img/suma/ghpapage.png)
 
 # Tampilan Produk Responsif (product-responsive.html)
-![Lihat Produk](assets/images/produkresp.png)
+
+![Lihat Produk](dist/img/suma/produkresp.png)
 
 # Login Responsif (login-responsive.html)
-![Login](assets/images/loginresp.png)
+
+![Login](dist/img/suma/loginresp.png)
 
 # Form Page (form.html)
-![Form](assets/images/ghfpage.png)
+
+![Form](dist/img/suma/ghfpage.png)
 
 # JSDasar Page (jsdasar.html)
-![JSD](assets/images/ghumpage.png)
+
+![JSD](dist/img/suma/ghumpage.png)

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUMA - Formulir Survei</title>
+    <link rel="stylesheet" href="../dist/css/suma/f.main.css" />
+  </head>
+  <body>
+    <header>
+      <button onclick="window.location.href='index.html'" style="width: 100%">
+        Kembali
+      </button>
+    </header>
+    <div class="container">
+      <form class="custom-form" id="myForm">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="no_hp">Nomor Handphone:</label>
+        <input type="tel" id="no_hp" name="no_hp" required />
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <div class="radio-group">
+          <input
+            type="radio"
+            id="laki-laki"
+            name="jenis_kelamin"
+            value="laki-laki"
+            required
+          />
+          <label for="laki-laki">Laki-laki</label>
+
+          <input
+            type="radio"
+            id="perempuan"
+            name="jenis_kelamin"
+            value="perempuan"
+            required
+          />
+          <label for="perempuan">Perempuan</label>
+        </div>
+
+        <label for="prodi">Prodi:</label>
+        <select id="prodi" name="prodi" required>
+          <option value="">Pilih Prodi</option>
+          <option value="Teknik Informatika">Teknik Informatika</option>
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Manajemen Informatika">Manajemen Informatika</option>
+        </select>
+
+        <label for="hobi">Hobi:</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="membaca" name="hobi" value="membaca" />
+          <label for="membaca">Membaca</label>
+
+          <input type="checkbox" id="menulis" name="hobi" value="menulis" />
+          <label for="menulis">Menulis</label>
+
+          <input type="checkbox" id="menyanyi" name="hobi" value="menyanyi" />
+          <label for="menyanyi">Menyanyi</label>
+
+          <input type="checkbox" id="olahraga" name="hobi" value="olahraga" />
+          <label for="olahraga">Olahraga</label>
+        </div>
+
+        <label for="alamat">Alamat Lengkap:</label>
+        <textarea id="alamat" name="alamat" required></textarea>
+
+        <label for="foto_diri">Foto Diri:</label>
+        <input type="file" id="foto_diri" name="foto_diri" required />
+
+        <input type="submit" value="Daftar" />
+      </form>
+
+      <!-- Overlay Popup -->
+      <div class="overlay" id="overlay">
+        <div class="overlay-popup">
+          <div class="overlay-content" id="overlay-content">
+            <p id="overlay-message"></p>
+            <button onclick="window.location.href='index.html'">Kembali</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 SUMA. Designed by Nata</p>
+    </footer>
+
+    <script src="../dist/js/suma/f.main.js"></script>
+  </body>
+</html>

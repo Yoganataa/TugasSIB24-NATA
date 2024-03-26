@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUMA - Umpan Balik</title>
+    <link rel="stylesheet" href="../dist/css/suma/jsd.main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Umpan Balik Mahasiswa</h1>
+
+      <form id="feedbackForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan Nama" required />
+
+        <label for="feedback">Umpan Balik:</label>
+        <textarea
+          id="feedback"
+          placeholder="Berikan Umpan Balik Anda"
+          required
+        ></textarea>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" required>
+          <option value="5">5 (Sangat Baik)</option>
+          <option value="4">4 (Baik)</option>
+          <option value="3">3 (Cukup)</option>
+          <option value="2">2 (Kurang)</option>
+          <option value="1">1 (Sangat Kurang)</option>
+        </select>
+
+        <button type="button" onclick="submitFeedback()">
+          Kirim Umpan Balik
+        </button>
+      </form>
+
+      <div id="feedbackList">
+        <h2>Umpan Balik yang Telah Diberikan:</h2>
+        <ul id="feedbackItems"></ul>
+      </div>
+    </div>
+
+    <script src="../dist/js/suma/jsd.main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUMA - Daftar Produk</title>
+    <link rel="stylesheet" href="../dist/css/suma/pa.main.css" />
+    <link rel="stylesheet" href="../dist/css/suma/nav.main.css">
+  </head>
+  <body>
+    <header>
+        <!-- navbar -->
+        <div class="nav-wrapper">
+            <div class="logo-container">
+                <img class="logo" onclick="window.location.href='index.html'" src="../dist/img/suma/suma.png" alt="Logo">
+            </div>
+            <nav>
+                <input class="hidden" type="checkbox" id="menuToggle">
+                <label class="menu-btn" for="menuToggle">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </label>
+                <div class="nav-container">
+                    <ul class="nav-tabs">
+                        <li class="nav-tab" onclick="window.location.href='productarray.html'">Daftarkan Barang Anda</li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <section>
+      <h1>Daftar Produk SUMA</h1>
+      <div class="tbl-header">
+        <table id="product-table" cellpadding="0" cellspacing="0" border="0">
+          <thead>
+            <tr>
+                <th>Nama Produk</th>
+                <th>Ukuran</th>
+                <th>Gender</th>
+                <th>Produk Tipe</th>
+                <th>Harga</th>
+            </tr>
+          </thead>
+      </div>
+      <div class="tbl-content">
+
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </section>
+        <footer>
+        <p>&copy; 2024 SUMA. Designed by Nata</p>
+    </footer>
+    <script src="../dist/js/suma/pa.main.js"></script>
+  </body>
+</html>
