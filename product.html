@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Cards</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #eee;
+    }
+
+    .container {
+      width: 900px;
+    }
+
+    .card {
+      background-color: #fff;
+      border: none;
+      border-radius: 10px;
+      width: 200px; /* Lebar tetap untuk kartu */
+      height: 300px; /* Tinggi tetap untuk kartu */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 20px;
+    }
+
+    .thumbnail-image {
+      border-radius: 10px !important;
+    }
+
+    .discount {
+      background-color: red;
+      padding: 1px 4px;
+      font-size: 10px;
+      border-radius: 6px;
+      color: #fff;
+    }
+
+    .wishlist {
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .dress-name {
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .price-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .new-price {
+      font-size: 13px;
+      font-weight: bold;
+      color: red;
+    }
+
+    .old-price {
+      font-size: 10px;
+      font-weight: bold;
+      color: grey;
+      text-decoration: line-through;
+    }
+
+    .color-select {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+    }
+
+    .btn-size {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid grey;
+      color: grey;
+      font-size: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 5px;
+    }
+
+    .rating-star {
+      font-size: 10px !important;
+    }
+
+    .rating-number {
+      font-size: 10px;
+      color: grey;
+    }
+
+    .buy {
+      font-size: 12px;
+      color: purple;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row justify-content-between" id="product-list">
+      <!-- Product cards will be inserted here -->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Fetch data from API
+    fetch('https://fakestoreapi.com/products')
+      .then(response => response.json())
+      .then(data => {
+        const productList = document.getElementById('product-list');
+
+        // Iterate through each product in the API response
+        data.forEach(product => {
+          // Create card element
+          const card = document.createElement('div');
+          card.classList.add('col-md-3', 'mb-4'); // Adjusted column width
+
+          // Construct card HTML
+          card.innerHTML = `
+            <div class="card">
+              <div class="image-container">
+                <img src="${product.image}" class="img-fluid rounded thumbnail-image" />
+              </div>
+              <div class="product-detail-container p-2">
+                <h5 class="dress-name">${product.title}</h5>
+                <div class="price-container">
+                  <span class="new-price">$${product.price}</span>
+                  <span class="old-price">$5.99</span>
+                </div>
+                <div class="color-select">
+                  <input type="button" name="grey" class="btn btn-size creme" />
+                  <input type="button" name="red" class="btn btn-size red ml-2" />
+                  <input type="button" name="blue" class="btn btn-size blue ml-2" />
+                </div>
+                <div class="btn-group mt-2" role="group">
+                  <button type="button" class="btn btn-size">S</button>
+                  <button type="button" class="btn btn-size">M</button>
+                  <button type="button" class="btn btn-size">L</button>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                  <div>
+                    <i class="fa fa-star-o rating-star"></i>
+                    <span class="rating-number">${product.rating.rate} / Jml: ${product.rating.count}</span>
+                  </div>
+                  <span class="buy">BUY +</span>
+                </div>
+              </div>
+            </div>
+          `;
+
+          // Append card to product list
+          productList.appendChild(card);
+        });
+      });
+  </script>
+</body>
+
+</html>
