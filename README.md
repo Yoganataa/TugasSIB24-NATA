@@ -14,6 +14,7 @@ Pertemuan 10
 ```bash
   - AdminLTE
   - Boostrap
+  - Responsive
 ```
 
 Pertemuan 9
@@ -54,35 +55,6 @@ Pertemuan 6
 - Kelas: FSWD 3
 
 ## Screenshots
-
-# Landing Page (Index.html)
-
-![landingpage](dist/img/suma/ghlpage.png)
-
-# Landing Page Js DOM (landingdom.html)
-
-!["JS DOM"](dist/img/suma/ghldompage.png)
-
-# Tambahkan Produk (productarray.html)
-
-![Tambah Produk](dist/img/suma/ghprpage.png)
-
-# Tampilan Produk (productapi.html)
-
-![Lihat Produk](dist/img/suma/ghpapage.png)
-
-# Tampilan Produk Responsif (product-responsive.html)
-
-![Lihat Produk](dist/img/suma/produkresp.png)
-
-# Login Responsif (login-responsive.html)
-
-![Login](dist/img/suma/loginresp.png)
-
-# Form Page (form.html)
-
-![Form](dist/img/suma/ghfpage.png)
-
-# JSDasar Page (jsdasar.html)
-
-![JSD](dist/img/suma/ghumpage.png)
+```bash
+  REMOVE: TERLALU BANYAK PAGES
+```

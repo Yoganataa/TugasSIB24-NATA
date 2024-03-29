@@ -33,3 +33,28 @@ $(document).ready(function () {
     $("#item").toggleClass("open");
   });
 });
+
+// loginlte
+document.getElementById('signInButton').addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent form submission
+          const email = document.getElementById('emailInput').value;
+          const password = document.getElementById('passwordInput').value;
+
+          fetch('https://fakestoreapi.com/users')
+              .then(res => res.json())
+              .then(users => {
+                  // Check if there's a user with the matching email and password
+                  const user = users.find(user => user.email === email && user.password === password);
+                  if (user) {
+                      console.log('Login successful for:', user);
+                      // Redirect to dashboard.html
+                      window.location.href = 'product-admin.html';
+                  } else {
+                      alert('Login failed! User not found or password does not match.');
+                  }
+              })
+              .catch(err => {
+                  console.error('Error:', err);
+                  alert('An error occurred while fetching user data.');
+              });
+      });
